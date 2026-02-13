@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Knights of Enigma - Advent Calendar</title>
+  <link rel="icon" type="image/png" href="beer.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <h1>Knights of Enigma</h1>
+
+  <div class="campaign">
+    STEM <span>BJORN</span><br>
+    <small>Senior 2026–2027</small>
+  </div>
+
+  <div class="subtitle">Only those who return at the right time may proceed</div>
+
+  <!-- Kalender hall -->
+  <div class="hall" id="hall"></div>
+
+  <!-- Modal voor content van de deuren -->
+  <div class="modal" id="modal">
+    <div class="modal-content" id="modalContent">
+      <div id="modalText"></div>
+      <div class="close" onclick="closeModal()">Close</div>
+    </div>
+  </div>
+
+  <!-- Advent JS -->
+  <script src="script.js"></script>
+</body>
+</html>

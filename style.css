@@ -1,0 +1,87 @@
+body {
+  margin:0;
+  min-height:100vh;
+  background: radial-gradient(circle, #3a3a3a 0%, #1b1b1b 70%);
+  color:#f4ecd8;
+  font-family:'Cormorant Garamond', serif;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+h1 {
+  font-family:'Cinzel', serif;
+  margin:40px 0 10px;
+  letter-spacing:2px;
+}
+
+.campaign {
+  margin:20px 0 30px;
+  text-align:center;
+  font-family:'Cinzel', serif;
+  font-size:32px;
+  letter-spacing:3px;
+  color:#c9a24d;
+  text-shadow:0 0 15px rgba(201,162,77,0.6);
+}
+
+.campaign span { font-size:40px; }
+.campaign small { display:block; margin-top:8px; font-size:18px; letter-spacing:2px; color:#f4ecd8; text-shadow:none; }
+
+.subtitle { opacity:0.8; margin-bottom:40px; font-style:italic; }
+
+.hall {
+  display:grid;
+  grid-template-columns:repeat(4,140px);
+  gap:25px;
+  padding-bottom:60px;
+}
+
+.seal {
+  height:140px;
+  background:linear-gradient(145deg,#2b1d0e,#3a2a16);
+  border:2px solid #5a4322;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:'Cinzel', serif;
+  font-size:24px;
+  cursor:pointer;
+  position:relative;
+  transition:all 0.3s ease;
+  user-select:none;
+}
+
+.seal.locked { opacity:0.4; cursor:not-allowed; }
+.seal.today { box-shadow:0 0 15px #c9a24d; animation:pulse 2s infinite; }
+.seal.opened { background:linear-gradient(145deg,#f4ecd8,#e6dbc3); color:#2b1d0e; border-color:#c9a24d; }
+.seal.opened::after { content:"✓"; position:absolute; top:5px; right:8px; font-size:20px; color:greenyellow; font-weight:bold; }
+
+@keyframes pulse {
+  0% { box-shadow:0 0 10px #c9a24d; }
+  50% { box-shadow:0 0 20px #ffd777; }
+  100% { box-shadow:0 0 10px #c9a24d; }
+}
+
+.modal {
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.75);
+  display:none;
+  align-items:center;
+  justify-content:center;
+}
+
+.modal-content {
+  background:#f4ecd8;
+  color:#2b1d0e;
+  padding:30px;
+  max-width:500px;
+  border-radius:10px;
+  font-size:18px;
+  line-height:1.6;
+  box-shadow:0 0 25px rgba(0,0,0,0.6);
+}
+
+.close { margin-top:20px; text-align:right; font-weight:bold; cursor:pointer; }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Knights of Enigma - Riddle</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Knights of Enigma</h1>
+<div class="subtitle">Solve the riddle to win for the giveaway!</div>
+
+<div class="riddle-box">
+  <p><strong>Riddle:</strong>We are Young, We are Wild, Who are we?</p>
+  <p>Hint: StudentenVerenging</p>
+
+  <form id="riddleForm">
+    <input type="text" id="user" placeholder="Your name" required><br><br>
+    <input type="text" id="answer" placeholder="Your answer" required><br><br>
+    <button type="submit">Submit Answer</button>
+  </form>
+
+  <div id="feedback" style="margin-top:15px; font-weight:bold;"></div>
+  <a href="index.html" style="display:block; margin-top:20px;">Back to Calendar</a>
+</div>
+
+<script>
+const form = document.getElementById("riddleForm");
+const feedback = document.getElementById("feedback");
+
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const user = document.getElementById("user").value.trim();
+    const answer = document.getElementById("answer").value.trim();
+
+    if(!user || !answer) return;
+
+    fetch("notify.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: `user=${encodeURIComponent(user)}&answer=${encodeURIComponent(answer)}`
+    })
+    .then(res => res.json())
+    .then(data => {
+        if(data.success){
+            feedback.style.color = "green";
+            feedback.innerText = "Correct! You are registered for the giveaway!";
+        } else {
+            feedback.style.color = "red";
+            feedback.innerText = "Wrong answer or mail failed. Try again.";
+        }
+    })
+    .catch(err => {
+        feedback.style.color = "red";
+        feedback.innerText = "Error sending request. Check server.";
+        console.error(err);
+    });
+});
+</script>
+
+</body>
+</html>
