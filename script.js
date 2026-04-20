@@ -1,6 +1,6 @@
 // advent.js
 
-const startDate = new Date(2026, 2, 23); // 23 maart 2026 (maart = 2)
+const startDate = new Date(2026, 3, 23); // 23 maart 2026 (maart = 2)
 startDate.setHours(0,0,0,0);
 
 const totalDays = 14;
