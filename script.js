@@ -12,17 +12,17 @@ const daysContent = [
   { type:"text", content:"Nu dat AV gedaan is, laten we samen ene drinken op cafe" },
   { type:"text", content:"In veel Europese universiteiten, zoals Leuven, Heidelberg en Wenen, ontstond studentenfolklore al in de middeleeuwen. Studenten hadden toen nog strengere regels en examens, dus ze ontwikkelden rituelen en tradities om samen stress te ontladen." },
   { type:"text", content:"De Enigma was een Duitse codeermachine uit de Tweede Wereldoorlog die berichten versleutelde met een ingewikkeld systeem van rotors, lampjes en plugboards." },
-  { type:"text", content:"Speak truth, even if softly." },
+  { type:"text", content:"De sterkste vriendschappen in studentenkringen ontstaan vaak tijdens de meest random momenten." },
   { type:"riddle", content:"Solve the riddle! Click to go to riddle page." },
-  { type:"text", content:"Patience is a weapon." },
-  { type:"text", content:"Aid another without reward." },
-  { type:"text", content:"Discipline sharpens steel." },
+  { type:"text", content:"HEt studentenras is stervende help mij deze weer tot leven te brengen stap per stap." },
+  { type:"text", content:"Wist je dat de verschillende kleuren klakken een betekenis hebben zo is die van ons zwart gebaseerd op de koolmijners vann vroeger." },
+  { type:"text", content:"Stuur mij de gekste foto van jezelf of die je van mij hebt door indien deze wint kan je komen genieten van een pint op mijn kosten!!!!!" },
   { type:"text", content:"Rest is not weakness." },
   { type:"text", content:"Question what you believe." },
   { type:"text", content:"Honor binds the Order." },
   { type:"text", content:"Prepare for the final trial." },
-  { type:"text", content:"Trust your instinct." },
-  { type:"text", content:"You are worthy of the Order." }
+  { type:"text", content:"Enigma heeft 10 Pro-Senioren kan jij ze in juiste volgorde als eerste doorsturen krijg je van mij een costume " },
+  { type:"text", content:"Hey vandaag is de TD der verkiezingen wees erbij en drink mee van het gratis vat dat ik trakteer" }
 ];
 
 const hall = document.getElementById("hall");
