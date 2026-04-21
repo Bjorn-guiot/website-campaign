@@ -241,6 +241,63 @@ h1 {
   color:#c9a24d;
 }
 
+.motivation-page {
+  width:min(900px, calc(100% - 32px));
+  padding-bottom:70px;
+}
+
+.motivation-card {
+  background:linear-gradient(145deg,#2b1d0e,#3a2a16);
+  border:2px solid #5a4322;
+  border-radius:8px;
+  padding:34px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+
+.motivation-card h2 {
+  margin:34px 0 12px;
+  color:#c9a24d;
+  font-family:'Cinzel', serif;
+  font-size:22px;
+  line-height:1.2;
+  letter-spacing:1px;
+}
+
+.motivation-card p,
+.motivation-card li {
+  font-size:20px;
+  line-height:1.6;
+}
+
+.motivation-card p {
+  margin:0 0 18px;
+}
+
+.motivation-card ul {
+  margin:0 0 22px;
+  padding-left:24px;
+}
+
+.motivation-card li {
+  margin-bottom:14px;
+}
+
+.motivation-card li::marker {
+  color:#c9a24d;
+}
+
+.motivation-signoff {
+  color:#c9a24d;
+  font-family:'Cinzel', serif;
+  letter-spacing:1px;
+}
+
+.motivation-signature {
+  margin-bottom:0;
+  font-family:'Cinzel', serif;
+  color:#f4ecd8;
+}
+
 @media (max-width: 680px) {
   h1 {
     font-size:28px;
@@ -262,5 +319,14 @@ h1 {
 
   .seal {
     height:120px;
+  }
+
+  .motivation-card {
+    padding:24px;
+  }
+
+  .motivation-card p,
+  .motivation-card li {
+    font-size:18px;
   }
 }
