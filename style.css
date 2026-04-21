@@ -169,11 +169,17 @@ h1 {
 }
 
 .board-card h2 {
+  min-height:44px;
   margin:0 0 10px;
   color:#c9a24d;
   font-family:'Cinzel', serif;
-  font-size:20px;
+  font-size:18px;
+  line-height:1.2;
   letter-spacing:1px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow-wrap:anywhere;
 }
 
 .board-name {
@@ -193,6 +199,46 @@ h1 {
   margin:0;
   font-size:18px;
   line-height:1.45;
+}
+
+.plans-page {
+  width:min(980px, calc(100% - 32px));
+  padding-bottom:60px;
+}
+
+.plans-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(230px, 1fr));
+  gap:18px;
+}
+
+.plan-card {
+  background:linear-gradient(145deg,#2b1d0e,#3a2a16);
+  border:2px solid #5a4322;
+  border-radius:8px;
+  padding:24px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+
+.plan-card h2 {
+  margin:0 0 16px;
+  color:#c9a24d;
+  font-family:'Cinzel', serif;
+  font-size:20px;
+  line-height:1.2;
+  letter-spacing:1px;
+  text-align:center;
+}
+
+.plan-card ul {
+  margin:0;
+  padding-left:22px;
+  font-size:20px;
+  line-height:1.55;
+}
+
+.plan-card li::marker {
+  color:#c9a24d;
 }
 
 @media (max-width: 680px) {
