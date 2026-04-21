@@ -8,7 +8,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['user']) && isset($_POS
     $user = strip_tags($_POST['user']);
     $answer = strip_tags($_POST['answer']);
 
-    $correctAnswer = "ENIGMA"; // juiste antwoord
+    $correctAnswer = "POPO"; // juiste antwoord
 
     if(strtoupper($answer) === $correctAnswer){
         // Combell mail instellingen
