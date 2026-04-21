@@ -28,7 +28,32 @@ h1 {
 .campaign span { font-size:40px; }
 .campaign small { display:block; margin-top:8px; font-size:18px; letter-spacing:2px; color:#f4ecd8; text-shadow:none; }
 
-.subtitle { opacity:0.8; margin-bottom:40px; font-style:italic; }
+.subtitle { opacity:0.8; margin-bottom:24px; font-style:italic; text-align:center; padding:0 20px; }
+
+.page-links {
+  display:flex;
+  gap:12px;
+  margin-bottom:40px;
+}
+
+.page-links a {
+  color:#f4ecd8;
+  border:1px solid #c9a24d;
+  padding:10px 18px;
+  border-radius:6px;
+  text-decoration:none;
+  font-family:'Cinzel', serif;
+  letter-spacing:1px;
+  background:rgba(43,29,14,0.7);
+  transition:all 0.2s ease;
+}
+
+.page-links a:hover,
+.page-links a:focus {
+  color:#2b1d0e;
+  background:#c9a24d;
+  box-shadow:0 0 14px rgba(201,162,77,0.55);
+}
 
 .hall {
   display:grid;
@@ -85,3 +110,111 @@ h1 {
 }
 
 .close { margin-top:20px; text-align:right; font-weight:bold; cursor:pointer; }
+
+.board-page {
+  width:min(1100px, calc(100% - 32px));
+  padding-bottom:60px;
+}
+
+.board-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+  gap:18px;
+}
+
+.board-card {
+  min-height:260px;
+  background:linear-gradient(145deg,#2b1d0e,#3a2a16);
+  border:2px solid #5a4322;
+  border-radius:8px;
+  padding:22px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.25);
+  text-align:center;
+}
+
+.board-photo {
+  width:120px;
+  height:120px;
+  margin:0 auto 18px;
+  border:1px dashed rgba(201,162,77,0.75);
+  border-radius:50%;
+  background:rgba(244,236,216,0.08);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  overflow:hidden;
+  color:#c9a24d;
+  font-family:'Cinzel', serif;
+  letter-spacing:1px;
+}
+
+.board-photo img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:none;
+}
+
+.board-photo img[src]:not([src=""]) {
+  display:block;
+}
+
+.board-photo img[src]:not([src=""]) + span {
+  display:none;
+}
+
+.photo-nathan {
+  object-position:35% 38%;
+}
+
+.board-card h2 {
+  margin:0 0 10px;
+  color:#c9a24d;
+  font-family:'Cinzel', serif;
+  font-size:20px;
+  letter-spacing:1px;
+}
+
+.board-name {
+  min-height:24px;
+  margin:0 auto 14px;
+  padding:6px 10px;
+  border:1px solid rgba(201,162,77,0.55);
+  border-radius:6px;
+  background:rgba(244,236,216,0.08);
+  color:#f4ecd8;
+  font-family:'Cinzel', serif;
+  font-size:15px;
+  letter-spacing:1px;
+}
+
+.board-card p {
+  margin:0;
+  font-size:18px;
+  line-height:1.45;
+}
+
+@media (max-width: 680px) {
+  h1 {
+    font-size:28px;
+    text-align:center;
+  }
+
+  .campaign {
+    font-size:26px;
+  }
+
+  .campaign span {
+    font-size:32px;
+  }
+
+  .hall {
+    grid-template-columns:repeat(2, minmax(120px, 140px));
+    gap:16px;
+  }
+
+  .seal {
+    height:120px;
+  }
+}
