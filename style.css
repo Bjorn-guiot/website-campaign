@@ -99,14 +99,28 @@ h1 {
 }
 
 .modal-content {
-  background:#f4ecd8;
+  background:linear-gradient(145deg,#f4ecd8,#e6dbc3);
   color:#2b1d0e;
-  padding:30px;
-  max-width:500px;
-  border-radius:10px;
-  font-size:18px;
-  line-height:1.6;
+  width:min(620px, calc(100% - 40px));
+  max-height:80vh;
+  overflow:auto;
+  padding:34px;
+  border:2px solid #c9a24d;
+  border-radius:8px;
+  font-size:20px;
+  line-height:1.65;
   box-shadow:0 0 25px rgba(0,0,0,0.6);
+}
+
+.modal-content #modalText {
+  white-space:pre-line;
+}
+
+.modal-content #modalText::first-line {
+  color:#6c4a14;
+  font-family:'Cinzel', serif;
+  font-size:24px;
+  font-weight:700;
 }
 
 .close { margin-top:20px; text-align:right; font-weight:bold; cursor:pointer; }

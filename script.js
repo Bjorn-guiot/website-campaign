@@ -9,8 +9,27 @@ const today = new Date();
 today.setHours(0,0,0,0);
 
 const daysContent = [
-  { type:"text", content:"Nu dat AV gedaan is, laten we samen ene drinken op cafe" },
-  { type:"text", content:"In veel Europese universiteiten, zoals Leuven, Heidelberg en Wenen, ontstond studentenfolklore al in de middeleeuwen. Studenten hadden toen nog strengere regels en examens, dus ze ontwikkelden rituelen en tradities om samen stress te ontladen." },
+  { type:"text", content:`Day 1 - AV ⚔️
+
+Vandaag is het zover: de AV. Altijd een spannend moment waarop we terugkijken naar het afgelopen jaar en zien wat goed liep en wat we kunnen meenemen naar volgend jaar.
+
+Maar vooral is dit een moment waarop we samenkomen als één groep.
+
+Daarnaast zal ik vandaag ook mijn kandidatuur voorstellen. Na de AV nodig ik jullie graag uit om samen iets te gaan drinken en na te praten op café 🍻
+
+Uur en locatie worden nog gedeeld in het event.
+De AV start om 19:30.
+
+Tot straks ⚔️` },
+  { type:"text", content:`Day 2 - Folklore ⚔️
+
+Wist je dat studentenfolklore al teruggaat tot de middeleeuwen?
+In de eerste Europese universiteiten bestonden er al rituelen en tradities om nieuwe studenten op te nemen in de groep.
+
+Folklore draaide toen, net zoals nu, om één ding:
+verbondenheid.
+
+En dat is exact waar Enigma vandaag nog steeds voor staat. 🍻` },
   { type:"text", content:"De Enigma was een Duitse codeermachine uit de Tweede Wereldoorlog die berichten versleutelde met een ingewikkeld systeem van rotors, lampjes en plugboards." },
   { type:"text", content:"De sterkste vriendschappen in studentenkringen ontstaan vaak tijdens de meest random momenten." },
   { type:"riddle", content:"Los het raadsel op! klik om naar het raadsel te gaan." },
