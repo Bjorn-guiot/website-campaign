@@ -32,8 +32,10 @@ h1 {
 
 .page-links {
   display:flex;
+  flex-wrap:wrap;
   gap:12px;
   margin-bottom:40px;
+  justify-content:center;
 }
 
 .page-links a {
@@ -53,6 +55,17 @@ h1 {
   color:#2b1d0e;
   background:#c9a24d;
   box-shadow:0 0 14px rgba(201,162,77,0.55);
+}
+
+.lang-link {
+  background:#c9a24d;
+  color:#f4ecd8 !important;
+}
+
+.lang-link:hover,
+.lang-link:focus {
+  background:#c9a24d !important;
+  color:#f4ecd8 !important;
 }
 
 .hall {

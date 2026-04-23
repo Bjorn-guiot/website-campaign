@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knights of Enigma - Enigme</title>
+  <link rel="icon" type="image/png" href="../../Campaignicon.png">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+<h1>Knights of Enigma</h1>
+<div class="subtitle">Resous l'enigme pour tenter de gagner le giveaway!</div>
+
+<div class="riddle-box">
+  <p><strong>Enigme:</strong> Tout le monde sait que BSK est compose de plusieurs cercles, mais pendant l'annee de Kyo, une fraternisation a eu lieu avant de retomber un peu dans l'oubli. Avec quel cercle cette fraternisation a-t-elle eu lieu?</p>
+  <p>Indice: Association etudiante du KMS</p>
+
+  <form id="riddleForm">
+    <input type="text" id="user" placeholder="Ton nom" required><br><br>
+    <input type="text" id="answer" placeholder="Ta reponse" required><br><br>
+    <button type="submit">Envoyer la reponse</button>
+  </form>
+
+  <div id="feedback" style="margin-top:15px; font-weight:bold;"></div>
+  <a href="../" style="display:block; margin-top:20px;">Retour au calendrier</a>
+</div>
+
+<script>
+const form = document.getElementById("riddleForm");
+const feedback = document.getElementById("feedback");
+
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const user = document.getElementById("user").value.trim();
+    const answer = document.getElementById("answer").value.trim();
+
+    if(!user || !answer) return;
+
+    fetch("../../notify.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: `user=${encodeURIComponent(user)}&answer=${encodeURIComponent(answer)}`
+    })
+    .then(res => res.json())
+    .then(data => {
+        if(data.success){
+            feedback.style.color = "green";
+            feedback.innerText = "Correct! Tu es bien inscrit pour le giveaway!";
+        } else {
+            feedback.style.color = "red";
+            feedback.innerText = "Mauvaise reponse ou echec de l'envoi du mail. Reessaie.";
+        }
+    })
+    .catch(err => {
+        feedback.style.color = "red";
+        feedback.innerText = "Erreur lors de l'envoi. Verifie le serveur.";
+        console.error(err);
+    });
+});
+</script>
+
+</body>
+</html>

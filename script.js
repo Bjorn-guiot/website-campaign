@@ -30,18 +30,105 @@ Folklore draaide toen, net zoals nu, om één ding:
 verbondenheid.
 
 En dat is exact waar Enigma vandaag nog steeds voor staat. 🍻` },
-  { type:"text", content:"De Enigma was een Duitse codeermachine uit de Tweede Wereldoorlog die berichten versleutelde met een ingewikkeld systeem van rotors, lampjes en plugboards." },
-  { type:"text", content:"De sterkste vriendschappen in studentenkringen ontstaan vaak tijdens de meest random momenten." },
-  { type:"riddle", content:"Los het raadsel op! klik om naar het raadsel te gaan." },
-  { type:"text", content:"HEt studentenras is stervende help mij deze weer tot leven te brengen stap per stap." },
-  { type:"text", content:"Wist je dat de verschillende kleuren klakken een betekenis hebben zo is die van ons zwart gebaseerd op de koolmijners vann vroeger." },
-  { type:"text", content:"Stuur mij de gekste foto van jezelf of die je van mij hebt door indien deze wint kan je komen genieten van een pint op mijn kosten!!!!!" },
-  { type:"text", content:"Iedereen draagt een tandje bij in de kring maar, jij bent toch de sterkste speler." },
-  { type:"text", content:"Pro-Senioren zijn mensen die de kring hebben geleid." },
-  { type:"text", content:"De beste kring is Enigma." },
-  { type:"text", content:"Lucas is mijn cantor en lionel is de charmante jongeman." },
-  { type:"text", content:"Enigma heeft 10 Pro-Senioren kan jij ze in juiste volgorde als eerste doorsturen krijg je van mij een costume " },
-  { type:"text", content:"Hey vandaag is de TD der verkiezingen wees erbij en drink mee van het gratis vat dat ik trakteer" }
+  { type:"text", content:`Day 3 – Enigma ⚔️
+
+Niet elke kring voelt meteen als thuis.
+
+Maar eens het klikt…
+dan blijf je hangen.
+
+Dat is wat Enigma voor mij is geworden. 🍻` },
+  { type:"text", content:`Day 4 – Vriendschap ⚔️
+
+In elke queeste ontstaan de sterkste banden niet op voorhand.
+
+Ze groeien onderweg.
+Tijdens onverwachte momenten, met mensen die eerst vreemden waren…
+en daarna je trouwste strijdmakkers worden. 🍻` },
+  { type:"riddle", content:`Day 5 – Raadsel ⚔️
+
+Tijd om je skills te testen.
+
+Los het raadsel op en zet een stap dichter naar het kraken van de Enigma. 🧠
+
+👉 Klik door en probeer het zelf.`},
+  { type:"text", content:`Day 6 – De missie ⚔️
+
+Student zijn is meer dan lessen volgen.
+
+Het is herinneringen maken, mensen leren kennen
+en ergens een plek vinden waar je blijft hangen.
+
+Dat is waar we met Enigma elke dag aan bouwen.` },
+  { type:"text", content:`Day 7 – Folklore ⚔️
+
+Onze zwarte klak? Die vindt zijn oorsprong bij de koolmijnwerkers van vroeger.
+
+Hard werk, samen sterk…
+en af en toe een pint erbij. 🍻
+
+En we zijn daar niet alleen in — binnen BSK dragen ook onze militaire vrienden van PoPo met trots hun zwarte klak.
+
+Traditie verbindt.` },
+  { type:"text", content:`Day 8 – Chaos ⚔️
+
+Tijd om jezelf te bewijzen.
+
+Stuur mij de gekste foto die je hebt (van jezelf… of van mij 😅).
+De beste inzending wint. Geen discussie.
+
+De winnaar krijgt een pint op mijn kosten. 🍻
+
+Laat zien wie hier echt chaos brengt.` },
+  { type:"text", content:`Day 9 – The Code ⚔️
+
+Elke ridderorde heeft zijn eigen code.
+
+Binnen Enigma is dat geen geschreven regel,
+maar iets dat je voelt: respect, sfeer en samenhorigheid.
+
+Dat is wat een echte Knight of Enigma maakt.` },
+  { type:"text", content:`Day 10 – The Legacy ⚔️
+
+Niet alles wat Enigma maakt, zie je meteen.
+
+Sommige dingen zitten in verhalen, tradities
+en de mensen die het blijven doorgeven.` },
+  { type:"text", content:`Day 11 – Feit ⚔️
+
+Sommige dingen moet je niet uitleggen.
+
+De beste kring is Enigma.` },
+  { type:"text", content:`Day 12 – Credits ⚔️
+
+Elke kring heeft zijn karakters.
+
+Lucas die de cantus draagt.
+Lionel die overal mee wegkomt.
+
+En nog een hele hoop legendes ertussenin.` },
+  { type:"text", content:`Day 13 – Final Challenge ⚔️
+
+10 Pro-Senioren.
+1 juiste volgorde.
+
+Kan jij ze allemaal correct plaatsen?
+
+De eerste die het juist doorstuurt, wint een one of a kind Knights of Enigma hoodie. 🛡️
+
+First message = first win.
+De winnaar wordt bekendgemaakt in het Facebook-event.
+
+Geen gokken. Alleen kennis.` },
+  { type:"text", content:`Final Day – TD ⚔️
+
+Vandaag is het zover.
+
+De TD der verkiezingen.
+Geen uitleg nodig.
+
+Kom af.
+Drink mee van het gratis vat. 🍻` }
 ];
 
 const hall = document.getElementById("hall");
