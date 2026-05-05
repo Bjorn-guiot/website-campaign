@@ -45,12 +45,15 @@ form.addEventListener("submit", function(e){
     })
     .then(res => res.json())
     .then(data => {
-        if(data.success){
+        if(data.success && data.mail){
             feedback.style.color = "green";
             feedback.innerText = "Correct! Tu es bien inscrit pour le giveaway!";
+        } else if(data.success){
+            feedback.style.color = "orange";
+            feedback.innerText = "Bonne reponse recue, mais l'email n'a pas pu etre envoye.";
         } else {
             feedback.style.color = "red";
-            feedback.innerText = "Mauvaise reponse ou echec de l'envoi du mail. Reessaie.";
+            feedback.innerText = "Mauvaise reponse. Reessaie.";
         }
     })
     .catch(err => {

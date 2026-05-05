@@ -1,7 +1,7 @@
 const startDate = new Date(2026, 3, 23);
 startDate.setHours(0, 0, 0, 0);
 
-const totalDays = 14;
+const totalDays = 20;
 
 const today = new Date();
 today.setHours(0, 0, 0, 0);
@@ -73,6 +73,6 @@ function closeModal(){
 }
 
 function toRoman(num){
-  const romans = ["I","II","III","IV","V","VI","VII","VIII","IX","X","XI","XII","XIII","XIV"];
+  const romans = ["I","II","III","IV","V","VI","VII","VIII","IX","X","XI","XII","XIII","XIV","XV","XVI","XVII","XVIII","XIX","XX"];
   return romans[num - 1];
 }

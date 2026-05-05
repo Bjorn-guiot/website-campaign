@@ -44,12 +44,15 @@ form.addEventListener("submit", function(e){
     })
     .then(res => res.json())
     .then(data => {
-        if(data.success){
+        if(data.success && data.mail){
             feedback.style.color = "green";
             feedback.innerText = "Correct! You are registered for the giveaway!";
+        } else if(data.success){
+            feedback.style.color = "orange";
+            feedback.innerText = "Correct answer received, but the email could not be sent.";
         } else {
             feedback.style.color = "red";
-            feedback.innerText = "Wrong answer or mail failed. Try again.";
+            feedback.innerText = "Wrong answer. Try again.";
         }
     })
     .catch(err => {
